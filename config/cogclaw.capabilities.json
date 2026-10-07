@@ -1,0 +1,25 @@
+{
+  "enabled": [
+    "skill-context-graphing",
+    "skill-benchmark-takeover",
+    "tool-fresh-verifier",
+    "mcp-filesystem",
+    "skill-paper-following",
+    "skill-skill-authoring"
+  ],
+  "hidden": [],
+  "approvalRequired": [
+    "tool-browser-fetch",
+    "tool-reproduction-runner",
+    "tool-repair-loop",
+    "mcp-browser",
+    "mcp-experiment-runner",
+    "tool-context-ingest",
+    "model-local-budget",
+    "model-vision-context",
+    "model-browser-research"
+  ],
+  "autoInstall": [
+    "skill-skill-authoring"
+  ]
+}

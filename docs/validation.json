@@ -1,0 +1,30 @@
+{
+  "checkedAtShanghai": "2026-10-07T23:09:26.493578+08:00",
+  "node": "v24.15.0",
+  "npm": "11.13.0",
+  "sourceFilesUnchanged": 42,
+  "networkModelCalls": 0,
+  "checks": [
+    {
+      "command": "npm ci --no-audit --no-fund",
+      "result": "PASS",
+      "scope": "Fresh local package dependencies; no parent node_modules junction"
+    },
+    {
+      "command": "npm run check",
+      "result": "PASS",
+      "scope": "Entire CLI dependency closure type check"
+    },
+    {
+      "command": "npm test",
+      "result": "PASS",
+      "scope": "Public CLI startup, standard SSE tool-argument fragments, real file write and tool-result feedback with offline fixture"
+    }
+  ],
+  "limitations": [
+    "No live model capability claim from the mocked test",
+    "No end-to-end external MCP account validation or GPU training in this package check",
+    "Source copied from existing CLI; package name/dependency scope/docs are the publication changes"
+  ],
+  "preAcceptanceFixtureIssue": "Initial offline SSE fixture incorrectly decoded JSON escapes and failed file-write verification. Fixed fixture framing only; no Runtime source changes; final test passed."
+}

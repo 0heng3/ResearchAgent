@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+!.env.example
+artifacts/
+outputs/
+.cogclaw/
+.logs/
+tmp/
+dist/
+coverage/
+*.log
+*.zip

@@ -1,0 +1,26 @@
+{
+  "name": "researchagent",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Research task strategies and skills on a multi-turn coding-agent CLI.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "tsx src/cli.ts",
+    "agent": "tsx src/cli.ts",
+    "cli": "tsx src/cli.ts",
+    "check": "tsc --noEmit",
+    "build": "tsc --noEmit",
+    "test": "node scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "zod": "3.25.76",
+    "tsx": "4.22.3"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "22.19.19"
+  }
+}
