@@ -1,0 +1,296 @@
+{
+  "status": "COMPLETE_WITH_EVALUATION_LIMITATION",
+  "finishedAtUtc": "2026-10-11T08:01:54.401935+00:00",
+  "scope": "2 small real-data method-comparison tasks, not a public benchmark aggregate, paper reproduction, SOTA gain or general success-rate estimate.",
+  "registeredTasks": 2,
+  "model": "deepseek-flash",
+  "originalRegisteredCompleteCount": 1,
+  "scientificProcedureAndNumericVerifiedCount": 2,
+  "independentReplayCorrectCount": 2,
+  "evaluationDefect": "One report-location false negative; original verification files and source hashes retained. No retrospective model rerun or score overwrite.",
+  "physicalModelCalls": 27,
+  "totalTokens": 558802,
+  "wallSeconds": 264.54699999978766,
+  "algorithmInterventionPerformed": false,
+  "algorithmGainEstablished": false,
+  "researchStrategyCausalAdvantageEstablished": false,
+  "source": "Existing D1 FINAL_RESULTS; projection only, no Agent rerun or original verdict overwrite",
+  "tasks": [
+    {
+      "id": "D1_R1",
+      "dataset": "Abalone",
+      "kind": "regression",
+      "splits": {
+        "train": 600,
+        "validation": 180,
+        "test": 180
+      },
+      "selection": "minimum validation_rmse",
+      "tieBreak": "first in supplied candidate list",
+      "noRefitOnValidation": true,
+      "candidateCount": 7,
+      "metrics": {
+        "selected_candidate": "KRR_A0.1_G0.05",
+        "n_eval": 180,
+        "test_rmse": 2.552489531836249,
+        "test_mae": 1.750669367943065,
+        "validation_results": [
+          {
+            "candidate_id": "RIDGE_A0.1",
+            "validation_rmse": 2.207127202701614
+          },
+          {
+            "candidate_id": "RIDGE_A1.0",
+            "validation_rmse": 2.213309595466426
+          },
+          {
+            "candidate_id": "RIDGE_A10.0",
+            "validation_rmse": 2.2538412670509724
+          },
+          {
+            "candidate_id": "KRR_A0.1_G0.05",
+            "validation_rmse": 2.167075816187683
+          },
+          {
+            "candidate_id": "KRR_A0.1_G0.2",
+            "validation_rmse": 2.1939617120527357
+          },
+          {
+            "candidate_id": "KRR_A1.0_G0.05",
+            "validation_rmse": 2.2593472703428112
+          },
+          {
+            "candidate_id": "KRR_A1.0_G0.2",
+            "validation_rmse": 2.266273446779674
+          }
+        ]
+      },
+      "scientificProcedureAndNumericVerified": true,
+      "originalRegisteredCompleteVerdict": true,
+      "evaluationLimitation": null,
+      "independentReplayCorrect": true,
+      "sourceSha256": "800c53d6490d5dcea85b676bc036a4f7488ea1f77fb9e41550d55168c726bfa1",
+      "firstSourceWriteAtModelCall": 5,
+      "physicalModelCalls": 15,
+      "wallSeconds": 120.35742839425802,
+      "toolCounts": {
+        "cog_bash": 9,
+        "cog_read": 2,
+        "cog_todo_write": 2,
+        "cog_write": 2,
+        "cog_experiment_run": 1
+      },
+      "toolEvents": [
+        {
+          "modelCall": 1,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 1,
+          "tool": "cog_read"
+        },
+        {
+          "modelCall": 2,
+          "tool": "cog_read"
+        },
+        {
+          "modelCall": 2,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 3,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 4,
+          "tool": "cog_todo_write"
+        },
+        {
+          "modelCall": 5,
+          "tool": "cog_write",
+          "artifact": "run_experiment.py"
+        },
+        {
+          "modelCall": 6,
+          "tool": "cog_experiment_run"
+        },
+        {
+          "modelCall": 7,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 8,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 9,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 10,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 11,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 12,
+          "tool": "cog_write",
+          "artifact": "report.md"
+        },
+        {
+          "modelCall": 13,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 14,
+          "tool": "cog_todo_write"
+        }
+      ]
+    },
+    {
+      "id": "D1_C1",
+      "dataset": "Ionosphere",
+      "kind": "classification",
+      "splits": {
+        "train": 210,
+        "validation": 70,
+        "test": 71
+      },
+      "selection": "maximum validation_balanced_accuracy",
+      "tieBreak": "first in supplied candidate list",
+      "noRefitOnValidation": true,
+      "candidateCount": 9,
+      "metrics": {
+        "selected_candidate": "SVC_C10.0_G0.01",
+        "n_eval": 71,
+        "test_accuracy": 0.9577464788732394,
+        "test_balanced_accuracy": 0.94,
+        "test_f1": 0.968421052631579,
+        "test_roc_auc": 0.9878260869565217,
+        "validation_results": [
+          {
+            "candidate_id": "LOGISTIC_C0.1",
+            "validation_balanced_accuracy": 0.8377777777777777,
+            "validation_roc_auc": 0.9333333333333332
+          },
+          {
+            "candidate_id": "LOGISTIC_C1.0",
+            "validation_balanced_accuracy": 0.8177777777777778,
+            "validation_roc_auc": 0.9377777777777778
+          },
+          {
+            "candidate_id": "LOGISTIC_C10.0",
+            "validation_balanced_accuracy": 0.8866666666666667,
+            "validation_roc_auc": 0.92
+          },
+          {
+            "candidate_id": "SVC_C0.1_G0.01",
+            "validation_balanced_accuracy": 0.6,
+            "validation_roc_auc": 0.9635555555555555
+          },
+          {
+            "candidate_id": "SVC_C0.1_G0.1",
+            "validation_balanced_accuracy": 0.54,
+            "validation_roc_auc": 0.9644444444444444
+          },
+          {
+            "candidate_id": "SVC_C1.0_G0.01",
+            "validation_balanced_accuracy": 0.9199999999999999,
+            "validation_roc_auc": 0.9804444444444445
+          },
+          {
+            "candidate_id": "SVC_C1.0_G0.1",
+            "validation_balanced_accuracy": 0.9266666666666667,
+            "validation_roc_auc": 0.9911111111111112
+          },
+          {
+            "candidate_id": "SVC_C10.0_G0.01",
+            "validation_balanced_accuracy": 0.96,
+            "validation_roc_auc": 0.9973333333333334
+          },
+          {
+            "candidate_id": "SVC_C10.0_G0.1",
+            "validation_balanced_accuracy": 0.9266666666666667,
+            "validation_roc_auc": 0.9866666666666667
+          }
+        ]
+      },
+      "scientificProcedureAndNumericVerified": true,
+      "originalRegisteredCompleteVerdict": false,
+      "evaluationLimitation": "Report delivered as results/report.md, while verifier required root/report.md; the public task did not state a root-only restriction. Original verdict kept, no report moved or manually written.",
+      "independentReplayCorrect": true,
+      "sourceSha256": "253e1248da6bdc3f3fb3ce244b93347e248bfee45e610f06fec4b3c65653dc0e",
+      "firstSourceWriteAtModelCall": 5,
+      "physicalModelCalls": 12,
+      "wallSeconds": 136.44916930794716,
+      "toolCounts": {
+        "cog_bash": 7,
+        "cog_read": 3,
+        "cog_todo_write": 2,
+        "cog_write": 1,
+        "cog_experiment_run": 1
+      },
+      "toolEvents": [
+        {
+          "modelCall": 1,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 1,
+          "tool": "cog_read"
+        },
+        {
+          "modelCall": 2,
+          "tool": "cog_read"
+        },
+        {
+          "modelCall": 2,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 3,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 4,
+          "tool": "cog_todo_write"
+        },
+        {
+          "modelCall": 5,
+          "tool": "cog_write",
+          "artifact": "run_experiment.py"
+        },
+        {
+          "modelCall": 6,
+          "tool": "cog_experiment_run"
+        },
+        {
+          "modelCall": 7,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 8,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 9,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 10,
+          "tool": "cog_bash"
+        },
+        {
+          "modelCall": 10,
+          "tool": "cog_todo_write"
+        },
+        {
+          "modelCall": 11,
+          "tool": "cog_read"
+        }
+      ]
+    }
+  ]
+}
