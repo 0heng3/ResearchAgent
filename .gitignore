@@ -11,3 +11,19 @@ dist/
 coverage/
 *.log
 *.zip
+
+# Experiment environments, caches, model weights and raw trajectories
+.hf-cache/
+.cache/
+.venv/
+__pycache__/
+*.py[cod]
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.jsonl
+data/
+datasets/
+models/
+runs/

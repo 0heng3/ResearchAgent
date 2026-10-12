@@ -1,0 +1,267 @@
+{
+  "registeredAtUtc": "2026-10-06T04:42:48.498796+00:00",
+  "cohort": "official all.txt full20, exactly1 Agent attempt each",
+  "paperIds": [
+    "fre",
+    "mechanistic-understanding",
+    "bridging-data-gaps",
+    "test-time-model-adaptation",
+    "all-in-one",
+    "sequential-neural-score-estimation",
+    "robust-clip",
+    "what-will-my-model-forget",
+    "pinn",
+    "stay-on-topic-with-classifier-free-guidance",
+    "rice",
+    "sample-specific-masks",
+    "adaptive-pruning",
+    "sapg",
+    "lca-on-the-line",
+    "stochastic-interpolants",
+    "bbox",
+    "lbcs",
+    "bam",
+    "ftrl"
+  ],
+  "agentOriginalRoot": "E:\\code\\COG-related works\\COG-CLAW-main",
+  "agentSnapshotRoot": "E:\\code\\COG-CLAW-Autogenesis\\artifacts\\benchmarks\\paperbench-code-dev-all20-20261006\\agent-snapshot",
+  "agentSourceHashes": {
+    "package-lock.json": "95a40420991848c95dc12339e12b5cecd3b11ff85dcd0e23cc1a89732bd4f929",
+    "package.json": "0a0897c66114c8bf27037d803e45e32334cf489e7df248d8a5e03e895e3775d7",
+    "tsconfig.json": "d723de2bd58f634a9abbc43ea1e4c8ed4044aae0d85b0f3441603689960478f4",
+    "config\\cogclaw.capabilities.json": "6db7298d5cdd3453382bf8f1605d4f2cb19abbc6715272dc00f3ac0a075aad7e",
+    "src\\App.tsx": "adfec264f9c8b836a59e30d17e2cd0b863ad97d7db50b56c46673cd7cf54aa6a",
+    "src\\cli.ts": "09bbaa6f5cb62eb60f471a7283ddf83247d48702a75a010972370acc37490fcc",
+    "src\\main.tsx": "4f6d2611f4468a4b9e0e88b5be9444dcfb239760408867c040d7c729207ae239",
+    "src\\styles.css": "68fbd0f5e1100a61e707d52d0b597d320a8d4aa6db1b05659d64fc707b0842e9",
+    "src\\components\\ClawLogo.tsx": "747140928709dcad5ebce72a4e6bd7de74b8ffb0c68e18ff2992f1eecd045c80",
+    "src\\core\\agenticTools.ts": "397dc38b475710c6c413d1e4744e70636d04a7c5098f6976e7de4486e1d28374",
+    "src\\core\\agentPrompt.ts": "ccf2e5517a83e0592500cf5abdc36fb65f19ae4d15a643fc7fd83360d152b0cd",
+    "src\\core\\agentRuntime.ts": "de31094af479116ced0755ee7d6a57f4139fd9c85fcf26052dfbe28a0747ea66",
+    "src\\core\\artifactStore.ts": "f2863b51c21cfc791704832726f66da2ded9f8f6dc2d8e6963bf98d712093cc4",
+    "src\\core\\backgroundRuntime.ts": "a0c25d73f9854efe37ad8be7abcc8c4565eda483bee02b65284535600e970f0a",
+    "src\\core\\browserRuntime.ts": "85d0e79f5819ef0bc92f8908f022b83c16a341a66d706b2a3cab448d0acccf88",
+    "src\\core\\capabilities.ts": "b0e5462b617dc749d9a92948801456f42c33c9168079c8e6909c36de4d09ba74",
+    "src\\core\\capabilityRuntime.ts": "e6048f3c0bf6ecb8596a2375610331acd0c7cfc0687c1740429a1545e2022b8b",
+    "src\\core\\chatStreamRuntime.ts": "dc46bfb791d922bed8462490fcb73f0d731c04212863f55b27c1cf7f37ba23ac",
+    "src\\core\\claudeCodeKernel.ts": "44499e3adf6cc4f53ee4c6992899a590b116d9ab61ff1f952e7227f51bb58924",
+    "src\\core\\constitution.ts": "38255e6536d0dcbdb64bafc1f853beeaf8d0fc5d26e9278981986ce8fe893ab1",
+    "src\\core\\contextGraph.ts": "faac4465e0a56fb7e6d931b5e7456080b13d34653ac59ad486b6a4f7ef3beead",
+    "src\\core\\coreTelemetry.ts": "08952dc7f9802d5f610dd8e50d7d4ac459d964b1298dc022392c970d7ffe8ee4",
+    "src\\core\\decision.ts": "9de65b86818c8930b739290fcdd898e2ce9e7c26ae8efc92fe1ad06402337997",
+    "src\\core\\defaultInput.ts": "e6aa52d4059bf7fd2723676e6e83e691a4219d41433aac03d9061b6f73f0507f",
+    "src\\core\\documentRuntime.ts": "b26ea6ea70d05bcfc357810f7363a26a41f1a76cab7458c7bf10a081f8066dc4",
+    "src\\core\\evidenceRuntime.ts": "e6daf328361c1bba213b5705fb8076fd5a1ea06e486561f177bf85df7881630a",
+    "src\\core\\extensionRuntime.ts": "76338b9720be4dc89c31572bc60b1b14fea289977c77fa27b0cce136817c2f58",
+    "src\\core\\harness.ts": "68059166aadc84cdcf8886359479b648c4e98f32b33c165f9fa80dc17842f221",
+    "src\\core\\hookRuntime.ts": "bcc16cd2ee8c182a7e6624c8b3afaf9edd957a70739aa4080f455ae49933564a",
+    "src\\core\\identity.ts": "2278b961d2584d756ff12e42c6261e63586207f0d4d1761b0c93434a67a4bdd0",
+    "src\\core\\localIntake.ts": "2f0c216aa8c99ddfa6c5fe7c82ce2e8636f416e1223de26d78ab29956bcd6a20",
+    "src\\core\\mcpClient.ts": "2cb96570c3541c9437df417899370229cf76030c49d1a2f22b8b5241e14b1fb8",
+    "src\\core\\memoryManager.ts": "9c599f4bdeb0bb48e246fe25c2e224b9be80cac55f43b30061277267bc689f2a",
+    "src\\core\\modelRouter.ts": "1d3e967a48e08a0ff3ae8a1481f8e91e7bd0bfd19575d17a9d7b25014c37cb91",
+    "src\\core\\multimodalRuntime.ts": "d651f9eb82103df22ad803b00d0a253994b87120594f1790ae456794d736a6d2",
+    "src\\core\\permissions.ts": "da170f95c997369308ae47dd7b2d09084b003a19059b90a063df8ba9856c155a",
+    "src\\core\\persistentMemory.ts": "876508cc7b6bc2a016b54116c7189d0b826f76dfa89ffbb0409a78ccbc73ea4b",
+    "src\\core\\planner.ts": "bfbdc0bef81c01a457fb7a5493c62003db16147a976d1dd9f78f9138eb0ee032",
+    "src\\core\\promptDoctrine.ts": "067aa2dbf4d9a6126f448e149962e31d2f080c9d223362b28a959cc7eec30db8",
+    "src\\core\\promptPackRuntime.ts": "b78e8e1bc7c58baea8bb0d3b02e23b66ad31ac9837ecc0859e919c96bfb0b01e",
+    "src\\core\\promptSections.ts": "8080586924221f3e424c55b575c475701a9f9bba64612b1529559a191f56bf8c",
+    "src\\core\\repairRuntime.ts": "1422f13668b8035c20faf4f615cc6ef7f9c8b753fcaf9612cba05cb41b4922cb",
+    "src\\core\\researchRuntime.ts": "ce89acd62a4933727a41a3409c1825d7d732cdf129c35beee3ef9d0aae09e872",
+    "src\\core\\runtimeEnv.ts": "dd3d41765459d8e5ccd59c7d52bf28050d86e2fe215aada03d6963037634dce2",
+    "src\\core\\session.ts": "a13516c49289e1b5d0f088bda5e638d9113c7ec0a0bc4aa46c99c1ab135abcd9",
+    "src\\core\\sessionRuntime.ts": "d2413b3c7584c784216f3fbe1677d008535c8a117a6efa4122c8e45ebfb894c2",
+    "src\\core\\skillRuntime.ts": "0d0ce34ef01259c19e6ebbe6b2f04c18450f5b496a2a47e32e0984ffbcd03337",
+    "src\\core\\skills.ts": "6430f530389a925e71eda5fff8eb014576db9c5b77a4f81185769d4a83242796",
+    "src\\core\\toolRegistry.ts": "dbab32a6ce1b82cc411d00b479226c4eb5941b49ab16e4720d62e0504d0a488a",
+    "src\\core\\tools.ts": "1a2183710d157fb56702632458057b5b7887277b99531d73cc2371c5c9b3cdaf",
+    "src\\core\\types.ts": "42d179c0e1510d80abf8ebca154dc888ba3eeb4b38053c4cfce53e8e4a14237e",
+    "src\\core\\webTools.ts": "b4a96122eac4d94d7fe3f7fbff2fd02ba50dcaa0157537640d91b13e7d3a0453",
+    "src\\core\\workerRuntime.ts": "945326e6746baafd43644097d6fa888948912f4fe21b55fdb687c8e14e80151e",
+    "src\\core\\workspace.ts": "c2516e9c5e726af0ee46d8152377da48cc6e181bb702484812441a6d30df5b8c",
+    "src\\core\\workspaceRegistry.ts": "9ac60ec7071614aacad9dcd46a91919128c9f672ed41ad8370a1348bbd8f21f1"
+  },
+  "agentPackageVersion": "2.0.0",
+  "dependencyLockSha256": "f11596a387e531c755d76ddd788d89ea5758745f6fa39681948275d4d5fa7e2f",
+  "runtimeVersions": {
+    "python": "3.10.11",
+    "node": "v24.15.0"
+  },
+  "officialSnapshot": {
+    "repository": "https://github.com/openai/frontier-evals",
+    "commit": "51052cede8cc608f95bb00346635e03759013e5a",
+    "archiveSha256": "b4263b7cedcee18a1082dfe7b78dbe4f80df0e16c91250ef77ba206cec66fad5",
+    "archiveBytes": 31622455
+  },
+  "inputHashesFile": "input-hashes.json",
+  "inputHashesSha256": "fdacbe6a8a98c84917b59d6963b38b8d9270c47ae7ac8ea3bc240c360aa4d328",
+  "splitSha256": "f2b382a46499f0c6801e7b62b171d8616f7be228c118c9756ce02a19f5ec5348",
+  "leafCounts": [
+    {
+      "paperId": "fre",
+      "allLeaves": 437,
+      "codeDevLeaves": 306
+    },
+    {
+      "paperId": "mechanistic-understanding",
+      "allLeaves": 96,
+      "codeDevLeaves": 36
+    },
+    {
+      "paperId": "bridging-data-gaps",
+      "allLeaves": 172,
+      "codeDevLeaves": 52
+    },
+    {
+      "paperId": "test-time-model-adaptation",
+      "allLeaves": 163,
+      "codeDevLeaves": 86
+    },
+    {
+      "paperId": "all-in-one",
+      "allLeaves": 174,
+      "codeDevLeaves": 92
+    },
+    {
+      "paperId": "sequential-neural-score-estimation",
+      "allLeaves": 92,
+      "codeDevLeaves": 67
+    },
+    {
+      "paperId": "robust-clip",
+      "allLeaves": 106,
+      "codeDevLeaves": 70
+    },
+    {
+      "paperId": "what-will-my-model-forget",
+      "allLeaves": 921,
+      "codeDevLeaves": 872
+    },
+    {
+      "paperId": "pinn",
+      "allLeaves": 1963,
+      "codeDevLeaves": 126
+    },
+    {
+      "paperId": "stay-on-topic-with-classifier-free-guidance",
+      "allLeaves": 121,
+      "codeDevLeaves": 70
+    },
+    {
+      "paperId": "rice",
+      "allLeaves": 361,
+      "codeDevLeaves": 178
+    },
+    {
+      "paperId": "sample-specific-masks",
+      "allLeaves": 331,
+      "codeDevLeaves": 87
+    },
+    {
+      "paperId": "adaptive-pruning",
+      "allLeaves": 123,
+      "codeDevLeaves": 86
+    },
+    {
+      "paperId": "sapg",
+      "allLeaves": 206,
+      "codeDevLeaves": 77
+    },
+    {
+      "paperId": "lca-on-the-line",
+      "allLeaves": 819,
+      "codeDevLeaves": 403
+    },
+    {
+      "paperId": "stochastic-interpolants",
+      "allLeaves": 69,
+      "codeDevLeaves": 58
+    },
+    {
+      "paperId": "bbox",
+      "allLeaves": 279,
+      "codeDevLeaves": 145
+    },
+    {
+      "paperId": "lbcs",
+      "allLeaves": 916,
+      "codeDevLeaves": 485
+    },
+    {
+      "paperId": "bam",
+      "allLeaves": 789,
+      "codeDevLeaves": 255
+    },
+    {
+      "paperId": "ftrl",
+      "allLeaves": 178,
+      "codeDevLeaves": 120
+    }
+  ],
+  "model": "deepseek-flash",
+  "route": "key2:deepseek-flash",
+  "pricing": {
+    "inputPerMillion": 0.3,
+    "outputPerMillion": 1.2,
+    "cachedPerMillion": 0.006
+  },
+  "priceBasis": "Frozen official DeepSeek peak reference, not gateway invoice",
+  "sharedLedger": "E:\\code\\COG-CLAW-Autogenesis\\.cogclaw\\model-cost.json",
+  "goal": "Read the supplied paper.md and addendum.md, obey blacklist.txt, and implement the paper contributions as a working codebase under submission/. This is a Code Development attempt, not a request for the full expensive experiment run. Include the actual method implementations, data/model interfaces, training/evaluation entrypoints and concise usage instructions. Run small CPU smoke tests where feasible; do not invoke paid external model APIs or download large pretrained models during checks. Do not access the paper original codebase, benchmark rubrics, Judge data or historical submissions. Finish with the real implemented file paths and clearly state what is implemented versus unrun.",
+  "goalSha256": "8dc1e517717f8214886dd7e35be6fcb41c33fa08db9e58d8c505dfc12b9d8b8e",
+  "mode": "auto",
+  "tools": "Unmodified native public CLI tools and default capabilities",
+  "agentAttemptsPerPaper": 1,
+  "budget": {
+    "sharedUtcDailyUsd": 50,
+    "campaignReferenceUsd": 45,
+    "agentWallSecondsPerPaper": 1800,
+    "agentPhysicalCallsPerPaper": 48,
+    "agentConservativeTokensPerPaper": 2500000,
+    "agentMaxOutputPerRequest": 16384,
+    "judgeWallSecondsPerPaper": 21600,
+    "judgePhysicalCallsPerPaper": 4000,
+    "judgeConservativeTokensPerPaper": 200000000,
+    "judgeMaxOutputPerRequest": 8192,
+    "judgeConcurrency": 2,
+    "minimumPhysicalRequestSpacingSeconds": 4,
+    "proxyReadTimeoutSeconds": 300,
+    "proxyDrainSeconds": 330
+  },
+  "generationOrder": "Exact official all.txt order, serial, fresh workspace/home/temp per paper",
+  "stages": "Generate all submissions first; freeze all submissions; then grade all fixed submissions",
+  "judge": {
+    "model": "deepseek-flash",
+    "officialJudgeModel": false,
+    "implementation": "Pinned official SimpleJudge",
+    "codeOnly": true,
+    "maxDepth": 999,
+    "concurrency": 2,
+    "adaptations": [
+      "Windows local-file Code-Dev; optional remote-computer imports shimmed but never instantiated",
+      "DeepSeek OpenAI-compatible transport; original structured parser with JSON shape formatting; surrogate tokenizer/context100000"
+    ]
+  },
+  "baseline": {
+    "officialStandaloneCodeDevPercent": 43.4,
+    "semPercentagePoints": 0.8,
+    "model": "IterativeAgent o1-high",
+    "judge": "o3-mini-2025-01-31 high",
+    "comparison": "Descriptive reference only; different model/Judge/budget; no superiority or causal claim"
+  },
+  "exposure": "Full-suite development evaluation. Some papers were previously observed; not an unseen/held-out result. No historical outputs or scores reused.",
+  "primary": "Mean of20 paper root-level weighted Code-Dev scores, reported only when every paper has an admissible complete score",
+  "validFailurePolicy": "Valid bounded Agent failures, timeouts and no-code deliveries are submitted to the same Judge; no dropping failed papers",
+  "invalidPolicy": "Transport/unknown-usage, modified inputs, launcher errors or incomplete grading retain null primary scores and remain in all20 results; no completed-only mean called full20",
+  "disqualificationPolicy": "Observed blacklisted/hidden evaluation access is disqualified and assigned0, never rerun",
+  "stopPolicy": "Unknown physical usage, daily/campaign cost cap or frozen-source drift stops paid work. All remaining entries are retained as not run. No task/prompt/model substitution.",
+  "resumePolicy": "No Agent replay. A started campaign cannot be launched again by this runner.",
+  "submissionExport": "submission/ if created, otherwise workspace; retain authored files excluding input files, environment and Runtime/cache metadata",
+  "runnerHashes": {
+    "campaign.py": "9c3ffb498d70e8a3145d8155e807aa059caa7d0422c3ccc0528b45bdcade12a1",
+    "metered_transport_pooled.py": "99a1f6f653b9077a3140d82775d72d6ef97a2e4b66b1913cafe2bcbeb91542a2",
+    "judge_bridge.py": "4e9dfc52195933157d872f4a8d9601fe08017b86c7fbc8b027bc665946c92980"
+  },
+  "preExecutionSupportFix": "Serialize campaign artifact writes before first physical model call; no Agent/model/goal/tools/budget/scoring changes."
+}

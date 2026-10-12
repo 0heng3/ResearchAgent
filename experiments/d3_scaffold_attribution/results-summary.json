@@ -1,0 +1,32 @@
+{
+  "status": "COMPARISON_COMPLETE",
+  "atUtc": "2026-10-12T06:54:26.417520+00:00",
+  "summary": {
+    "native": {
+      "validRuns": 2,
+      "verifiedSuccess": 0,
+      "totalTasks": 2,
+      "sourceProducingTasks": 0,
+      "physicalCalls": 2,
+      "totalTokens": 28077,
+      "wallSeconds": 114.78693529032171
+    },
+    "mini": {
+      "validRuns": 2,
+      "verifiedSuccess": 0,
+      "totalTasks": 2,
+      "sourceProducingTasks": 2,
+      "physicalCalls": 32,
+      "totalTokens": 176255,
+      "wallSeconds": 205.4427443863824
+    }
+  },
+  "researchQuestion": "Fixed raw7B complete scientific tasks: native full system vs official mini2.4.6 default system",
+  "claimScope": "Exploratory2 paired tasks; whole-system attribution only, not isolated prompt/module causal claim or production-model improvement",
+  "gpuHours": 0.0942653124510414,
+  "apiCostUsd": 0,
+  "gpuMonetaryCostUnknown": true,
+  "trainingUpdates": 0,
+  "productionAgentModified": false,
+  "productionResearchGoalAchieved": false
+}

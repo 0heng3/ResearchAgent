@@ -1,0 +1,29 @@
+{
+  "status": "COMPARISON_COMPLETE",
+  "atUtc": "2026-10-12T03:23:10.978129+00:00",
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "arms": {
+    "raw": {
+      "tasks": 4,
+      "protocolValid": 4,
+      "verifiedSuccess": 0,
+      "sourceProducingTasks": 0,
+      "physicalCalls": 4,
+      "totalTokens": 58096,
+      "wallSeconds": 300.7724980106577
+    },
+    "sft": {
+      "tasks": 4,
+      "protocolValid": 4,
+      "verifiedSuccess": 0,
+      "sourceProducingTasks": 0,
+      "physicalCalls": 4,
+      "totalTokens": 56310,
+      "wallSeconds": 302.7210703971796
+    }
+  },
+  "completionGainPercentagePoints": 0,
+  "decision": "STOP_NO_GAIN",
+  "productionResearchGoalAchieved": false,
+  "apiCostUsd": 0
+}

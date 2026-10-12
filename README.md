@@ -65,9 +65,23 @@ node verify.mjs
 
 ## 效果与边界
 
-真实能力结果必须来自固定版本的任务执行，而不是模式名称、Skill 数量或模拟响应。当前发布时的评测说明见 [EVALUATION.md](docs/EVALUATION.md)。
+真实能力结果来自固定版本的任务执行，而不是模式名称、Skill 数量或模拟响应。**2026-10-12 更新**：
 
-本包不宣称：完整论文复现成功率、超过官方模型、科研策略/Skills 的因果性能增益，或完整上游商业 coding-agent 引擎已经接管运行。历史选定高分产物、论文专用 Prompt 和 Judge 数据均未放入包内。
+| 评测 / 实验 | 实际结果 | 适用范围 |
+|---|---|---|
+| PaperBench Code-Dev 官方 `all.txt` 全部20篇 | 每篇一次生成；20/20评分完成；平均加权代码实现分 **63.85%** | DeepSeek 自定义 Judge，非原报告 Judge 配置；不是完整论文训练复现成功率 |
+| D2 助手动作轨迹 SFT | 原始7B学生 0/4，最终 LoRA 0/4 | 当前配方无完成率收益，`STOP_NO_GAIN`；不代表所有 SFT 无效 |
+| D3 同模型系统对照 | 完整成功原生 / mini 均 0/2；源码产出 0/2 / 2/2 | 系统改变行动行为，但尚未建立科学任务完成优势 |
+
+PaperBench 分数先按各论文 rubric 权重计算，再对20篇等权平均；不是“通过节点总数 / 总节点数”。评分于 **2026-10-09** 完成，保留补评过程中的超时、断开和未知费用记录，不重跑 Agent、不修提交代码、不择高分。
+
+- [完整评测说明与20篇逐篇分数](docs/EVALUATION.md)
+- [可机读的20篇结果摘要](docs/evaluation/paperbench-code-dev-all20-summary.json)
+- [D2 / D3 方法、代码与失败边界](experiments/README.md)
+
+这些实验沿用冻结的 ResearchAgent v2 完整 CLI 快照，当前最小包的43项 CLI 核心/配置文件与其逐字节哈希一致，没有为了评分修改生产运行时。当前仍不宣称：完整论文复现成功率、超过官方模型、科研策略/Skills 的因果性能增益、SFT泛化提升，或完整上游商业 coding-agent 引擎已经接管运行。**算法训练改善完整 Agent 能力的研究目标尚未达成。**
+
+只发布实验源代码、冻结协议与精简结果，不发布真实凭据、训练/测试数据、模型权重、原始轨迹、完整 Judge 反馈或费用账本。
 
 ## 文件结构
 
@@ -78,7 +92,10 @@ config/                    能力配置
 examples/research-task/     最小任务输入与独立检查
 scripts/smoke.mjs           不调用真实模型的启动 / 工具调用冒烟检查
 docs/ARCHITECTURE.md        实际入口与关键实现映射
-docs/EVALUATION.md          发布时的结果范围和限制
+docs/EVALUATION.md          当前结果范围、20篇分数和限制
+docs/evaluation/           可机读的精简结果
+experiments/               冻结的D2/D3研究脚本与协议
+evaluation/                既有PaperBench评测源代码
 docs/source-manifest.json  复制源码的版本与摘要
 .env.example               无真实凭据的配置模板
 ```
